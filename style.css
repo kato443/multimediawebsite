@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #e41f1f;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    background: #ccd7e7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Input styles */
+input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Audio & Video */
+audio, video {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Add this to your styles.css */
+
+#animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    animation: moveLeftRight 3s infinite alternate ease-in-out;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 300px; /* Adjust this value based on how far you want it to move */
+    }
+}
+
+/* Add some spacing between sections on smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
